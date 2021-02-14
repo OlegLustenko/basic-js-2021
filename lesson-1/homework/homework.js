@@ -23,3 +23,12 @@ console.log(user); // Object
     адрес в виде (номер улицы, имя улицы, номер квартиры),
     список друзей
 */
+
+
+const user = {
+  name: 'Oleh',
+  middleName: 'Lustenko',
+  phoneNumber: 380912391923,
+  isDeleted: true,
+  address: 
+};
