@@ -1,5 +1,5 @@
 /*
- 
+
  1. Составить предложение из нижестоящих переменных:
  "Сколько нужно программистов чтобы сделать проект ? 1, 25, команда"
  */
@@ -10,12 +10,13 @@ let team = `команда`;
 let howMuch = 'Сколько';
 let sentence = 'нужно программистов чтобы сделать проект ?';
 
-let task1 /* ВАШ КОД */;
+let task1 = `${howMuch} ${sentence} ${numbers[1]}, ${numbers[0]}, ${team}`;
+console.log(task1);
 
 /*
- 2. Составьте предложение из представленного массива 
+ 2. Составьте предложение из представленного массива
  и выведите предложение в консоль;
- "Так, когда Будда достиг Просветления, он обнаружил, что больше не ощущает себя мишенью. 
+ "Так, когда Будда достиг Просветления, он обнаружил, что больше не ощущает себя мишенью.
   Он не был больше ни телом, к которому рано или поздно ..."
  */
 
@@ -28,14 +29,20 @@ let array = [
   '...',
   'что больше',
   'ощущает себя мишенью',
-  'не'
 ];
 
-let homeSentence /* ЗДЕСЬ ВАШ КОД */;
+const he = array[0];
+const NOT = array[3];
+const firstSentence = `${array[4]}, ${array[2]}, ${array[6]} ${NOT} ${array[7]}`;
+const secondSentence = `${he} ${NOT} ${array[1]} ${array[5]}`;
 
+let homeSentence = `${firstSentence}.
+${secondSentence}`;
+
+console.log(homeSentence);
 
 /*
- 3. Преобразуйте строку x, 
+ 3. Преобразуйте строку x,
     в максимально удобно читаемый для программиста вид
  */
 
@@ -48,8 +55,19 @@ released ' +
   frameworks[1] +
   Math.floor(frameworks[0]) +
   '\
-But real speed is ' +
+ But real speed is ' +
   `${frameworks[frameworks.length - 1]}`;
+
+console.log(x);
+
+const angularFramework = frameworks[1] + Math.floor(frameworks[0]);
+const reactFramework = frameworks[frameworks.length - 1];
+
+const solution3 = `google released new version ${angularFramework} But real speed is 
+${reactFramework}
+`
+
+console.log(solution3);
 
 
 // LINKS
