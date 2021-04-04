@@ -1,93 +1,131 @@
-/*
- Напишите условие, в котором сценарий пойдет 
- по альтернативной ветке.
- Будет содержать 2 уровня вложенности и будет 
- выполняться самый нижный уровень вложенности
-*/
+// /*
+//  Напишите условие, в котором сценарий пойдет 
+//  по альтернативной ветке.
+//  Будет содержать 2 уровня вложенности и будет 
+//  выполняться самый нижный уровень вложенности
+// */
 
-/*
-Напишите функцию, которая принимает 1 аргумент объект 
-И ЕСЛИ у этого объекта нет свойста salary 
-ИЛИ значение salary не заполнено,
-добавляет в эту переменную свойство salary с значением 800
-*/
+// if (isMoreThanTen(9)) {
+// } else {
+//   if (isMoreThanTen(200)) {
+//     if (true != false) {
+//       console.log("самый нижный уровень вложенности");
+//     }
+//   }
+// }
 
-function addSalary(someUser) {
+// function isMoreThanTen(comparableNumber) {
+//   const myTen = 10;
 
-}
+//   return comparableNumber > 10;
+// }
 
+// /*
+// 1) Ключевые слова в JavaScript
+// 2) Создаем профили на linkedin
+// 3) Используем ключевые слова в JavaScript для написания приложений
+// 4) Где-то деньги
+// */
 
-addSalary({salary: 200}) // {salary: 200}
-addSalary({name: "Junior Dev"}) // {name: "Junior Dev", salary: 800}
-addSalary({salary: 3000}) // {salary: 800}
-addSalary({salary: null}) // {salary: 800}
+// /*
+// Напишите функцию, которая принимает 1 аргумент объект 
+// И ЕСЛИ у этого объекта нет свойста salary 
+// ИЛИ значение salary не заполнено,
+// добавляет в эту переменную свойство salary с значением 800
+// */
 
-/*
-1. Напишите функцию которая принимает в
-качестве аргумента массив и элемент массива
-и добавляет элемент в конец массива
-*/
+// function addSalary(user) {
+//   if (!user.salary) {
+//     user.salary = 800;
+//   }
+//   console.log(user);
+// }
 
-let arr = [];
+// addSalary({ salary: 200 }); // {salary: 200}
+// addSalary({ name: "Junior Dev" }); // {name: "Junior Dev", salary: 800}
+// addSalary({ salary: 3000 }); // {salary: 3000}
+// addSalary({ salary: null }); // {salary: 800}
 
-function addToArray(arrParam, newElem) {
+// /*
+// 1. Напишите функцию которая принимает в
+// качестве аргумента массив и элемент массива
+// и добавляет элемент в конец массива
+// */
 
-}
+// let arr = [];
 
-addToArray(arr, 'qwe') // ['qwe']
-addToArray(arr, 'qwe') // ['qwe', 'qwe']
-addToArray(arr, ['privet']) // ['qwe', 'qwe', ['privet'] ]
+// function addToArray(arrParam, newElem) {
+//   // arrParam[arrParam.length] = newElem;
+//   arrParam.push(newElem);
+// }
 
-///////////////////////////////////////////////
-/*
-3.  Напишите функцию которая принимает 3 аргумента,
-     третий аргумент - это объект.
+// addToArray(arr, "qwe"); // ['qwe']
+// // arr === ['qwe'];
+// addToArray(arr, "qwe"); // ['qwe', 'qwe']
+// // arr === ['qwe'];
+// addToArray(arr, ["privet"]); // ['qwe', 'qwe', ['privet'] ]
+// // arr === [['privet']];
 
-    Функция создает новый объект и добавляет ключ
-    это первый аргумент, а значение - второй аргумент
-    Проверяет если есть свойство name в переданном объекте,
-    тогда добавляет данное свойство и возвращает новый объект
+// ///////////////////////////////////////////////
+// /*
+// 3.  Напишите функцию которая принимает 3 аргумента,
+//     третий аргумент - это объект.
 
-*/
-var myName = { name: 'Oleg' };
+//     Функция создает новый объект и добавляет ключ
+//     это первый аргумент, а значение - второй аргумент
 
-function addNameToUser(newKey, newValue, someObject) {
-}
+//     Проверяет если есть свойство name в переданном объекте,
+//     тогда добавляет данное свойство 
+    
+//     и возвращает новый объект
 
-console.log(addNameToUser('family', '%Lustenko%', myName));
-// {name:'Oleg', family:'%Lustenko%'}
+// */
+// var myName = { name: "Oleg" };
 
-console.log(addNameToUser('name', 'privet Pasha', {}));
-// { name:'privet Pasha'}
+// function addNameToUser(newKey, newValue, someObject) {
+//   const myNewObject = {};
 
+//   myNewObject[newKey] = newValue; // newKey = 'age', newValue = 20, someObject = { name: "Sasha" }
+  
+//   if (someObject.name) {
+//     myNewObject.name = someObject.name;
+//   }
 
-console.log(myName);
-// { name:'Oleg'}
+//   if (someObject.surname) {
+//     myNewObject.surname = someObject.surname;
+//   }
 
+//   return myNewObject;
+// }
 
-/*
--> @@ SUPER
-  Напишите функцию, которая будет возвращать 'Fizz'
-   если передаваемый параметр кратен 3,
-   'Buzz', если передаваемый параметр кратен 5,
-   'FizzBuzz' - если параметер кратен 3 и 5
-   Если передаваемое число не кратно 3 или 5, то вернуть указанный параметр
+// console.log(addNameToUser("age", 20, { name: "Sasha" }));
+// // {}
 
-   % – module
-*/
+// console.log(myName);
+// // { name:'Oleg'}
 
-function fizzBuzz(num) {
-  /* Ваш код здесь */
-}
+// /*
+// -> @@ SUPER
+//   Напишите функцию, которая будет возвращать 'Fizz'
+//    если передаваемый параметр кратен 3,
+//    'Buzz', если передаваемый параметр кратен 5,
+//    'FizzBuzz' - если параметер кратен 3 и 5
+//    Если передаваемое число не кратно 3 или 5, то вернуть указанный параметр
 
-fizzBuzz(1); // 1
-fizzBuzz(2); // 2
-fizzBuzz(3); // 'Fizz'
-fizzBuzz(5); // 'Buzz'
-// ...
-fizzBuzz(15); // 'FizzBuzz'
-fizzBuzz(21); // 'Fizz'
+//    % – module
+// */
 
+// function fizzBuzz(num) {
+//   /* Ваш код здесь */
+// }
+
+// fizzBuzz(1); // 1
+// fizzBuzz(2); // 2
+// fizzBuzz(3); // 'Fizz'
+// fizzBuzz(5); // 'Buzz'
+// // ...
+// fizzBuzz(15); // 'FizzBuzz'
+// fizzBuzz(21); // 'Fizz'
 
 /* -> @@ SUPER 2
 
@@ -98,6 +136,39 @@ fizzBuzz(21); // 'Fizz'
 
 */
 
-function super2(arg1, arg2, arg3, callback) {
+// super2 -> new array -> callback function
 
+function super2(arg1, arg2, arg3, callback) {
+  let newArray = [arg1, arg2, arg3];
+
+  callback(newArray);
 }
+
+function showInConsole(anything) {
+  console.log(anything);
+}
+
+function showInAlert(anything) {
+  alert(anything);
+}
+
+super2('JavaScript','Позитив', 'Мир всем', showInAlert);
+super2(50,'привет', 'JavaScript', showInConsole);
+
+
+function lightSuper2(arg1, arg2, arg3) {
+  let newArray = [arg1, arg2, arg3];
+
+  showInConsole(newArray);
+}
+
+function lightSuper2_1(arg1, arg2, arg3) {
+  let newArray = [arg1, arg2, arg3];
+
+  showInAlert(newArray);
+}
+
+lightSuper2_1('JavaScript', 'React', 'Redux');
+lightSuper2('100', 'vk', 'facebook');
+
+
