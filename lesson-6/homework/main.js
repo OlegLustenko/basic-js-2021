@@ -3,9 +3,45 @@
 И отображать в консоле все числа больше 25
 */
 
-solution([0,1]) // 
-solution([100,3,1,26,7]) // 100, 26 
-solution([26,27,28,3,200]) // 26,27,27,200
+// 1) Создать массивы
+const array = [0, 1];
+const array2 = [100, 3, 1, 26, 7];
+const array3 = [26, 27, 28, 3, 200];
+
+// 2) Написать функцию которая принимает 1 аргумент
+function solution(array) {
+  //3) Написать цикл который перебирает каждый элемент массива
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    // 4) Написать условие сравнения в котором сравнить элемент массива с числом 25
+    if (element > 25) {
+      // 5) Если число больше 25, отобразить в консоле
+      console.log(element);
+    }
+  }
+}
+
+solution(array);
+solution(array2);
+solution(array3);
+
+/*
+1) Создать массивы
+2) Написать функцию которая принимает 1 аргумент
+3) Написать цикл который перебирает каждый элемент массива
+4) Написать условие сравнения в котором сравнить элемент массива с числом 25
+5) Если число больше 25, отобразить в консоле
+*/
+
+console.log(compareTo25(100));
+
+function functionName(аргумент1, аргумент2) {
+  // ТЕЛО ФУНКЦИИ
+
+  console.log(аргумент1);
+}
+
+functionName("Привет как твои дела?");
 
 /*
  1. Переместите 0 в конец массива, остальные числа должны остаться
@@ -42,12 +78,10 @@ let arr2 = [
   {},
   0,
   0,
-  9
+  9,
 ];
 
-function moveZeroToEnd(arr) {
-  
-}
+function moveZeroToEnd(arr) {}
 
 // console.log(moveZeroToEnd(arr1));
 // console.log(moveZeroToEnd(arr2));
@@ -62,9 +96,7 @@ function moveZeroToEnd(arr) {
 
  */
 
-function minimalNumber(arr) {
-  
-}
+function minimalNumber(arr) {}
 
 minimalNumber([10, 20, 30, 1, 31, 11, 10]);
 // minimalNumber([-1, 0, 25]);
@@ -78,9 +110,7 @@ minimalNumber([10, 20, 30, 1, 31, 11, 10]);
  nameShuffler('James Bond'); => "Bond James"
  */
 
-function nameShuffler(str) {
-  
-}
+function nameShuffler(str) {}
 
 /*
  // !
@@ -90,9 +120,7 @@ function nameShuffler(str) {
  capMe(['KARLY', 'DANIEL', 'KELSEY']) // returns ['Karly', 'Daniel', 'Kelsey']
  */
 
-function capMe(arr) {
- 
-}
+function capMe(arr) {}
 
 // @SUPER
 /*
@@ -106,9 +134,7 @@ function capMe(arr) {
   [0,16,24,32] => 8
  */
 
-function random(arr) {
-  
-}
+function random(arr) {}
 
 console.log(random([0, 8, 16, 32]));
 console.log(random([0, 16, 24, 32]));
@@ -129,6 +155,4 @@ console.log(random([4, 6, 8, 10]));
 
  */
 
-function openBraces(arr) {
- 
-}
+function openBraces(arr) {}
