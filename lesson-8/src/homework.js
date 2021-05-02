@@ -9,9 +9,7 @@ const array2 = [100, 3, 1, 26, 7];
 const array3 = [26, 27, 28, 3, 200];
 
 // 2) Написать функцию которая принимает 1 аргумент
-function solution(array) {
-
-}
+function solution(array) {}
 
 solution(array);
 solution(array2);
@@ -25,15 +23,7 @@ solution(array3);
 5) Если число больше 25, отобразить в консоле
 */
 
-console.log(compareTo25(100));
-
-function functionName(аргумент1, аргумент2) {
-  // ТЕЛО ФУНКЦИИ
-
-  console.log(аргумент1);
-}
-
-functionName("Привет как твои дела?");
+// -----------------
 
 /*
  1. Переместите 0 в конец массива, остальные числа должны остаться
@@ -79,23 +69,6 @@ function moveZeroToEnd(arr) {}
 // console.log(moveZeroToEnd(arr2));
 
 /*
- 2. Верните сумму двух найменьших чисел в массиве
-
- [10,20,30,1,31,11,10] => 11
- [-1,0,25] => -1
- [-4,-10,25,10] => -14
- [0,200,10,25,15] => 10
-
- */
-
-function minimalNumber(arr) {}
-
-minimalNumber([10, 20, 30, 1, 31, 11, 10]);
-// minimalNumber([-1, 0, 25]);
-// minimalNumber([-4, -10, 25, 10]);
-// minimalNumber([0, 200, 10, 25, 15]);
-
-/*
  3. Напишите функцию которая меняет местами имя и фамилию
  nameShuffler('john McClane'); => "McClane john"
  nameShuffler('Arnold Schwarzenegger'); => "Schwarzenegger Arnold"
@@ -114,37 +87,35 @@ function nameShuffler(str) {}
 
 function capMe(arr) {}
 
-// @SUPER
 /*
- 1. Найдите число отсутствующее в заданной последовательности
- Если вся последовательность верна, добавить число сначала
+Напишите функцию, которая принимает 1 аргумент объект 
+И ЕСЛИ у этого объекта нет свойста salary 
+ИЛИ значение salary не заполнено,
+добавляет в эту переменную свойство salary с значением 800
+*/
 
+addSalary({ salary: 200 }); // {salary: 200}
+addSalary({ name: "Junior Dev" }); // {name: "Junior Dev", salary: 800}
+addSalary({ salary: 3000 }); // {salary: 3000}
+addSalary({ salary: null }); // {salary: 800}
 
- example:
-  [0,8,16,32] => 24
-  [4, 6, 8, 10] => 2 // число сначала
-  [0,16,24,32] => 8
- */
+// ///////////////////////////////////////////////
+// /*
+// 3.  Напишите функцию которая принимает 3 аргумента,
+//     третий аргумент - это объект.
 
-function random(arr) {}
+//     Функция создает новый объект и добавляет ключ
+//     это первый аргумент, а значение - второй аргумент
 
-console.log(random([0, 8, 16, 32]));
-console.log(random([0, 16, 24, 32]));
-console.log(random([4, 6, 8, 10]));
+//     Проверяет если есть свойство name в переданном объекте,
+//     тогда добавляет данное свойство
 
-/*
- Задача с собеседований
+//     и возвращает новый объект
 
- 2. Напишите функция которая преобразовывает/открывает скобки всех
- вложенных внутри массивов
- Необходимо реализовать рекурсивный фызов функции.
- Функция должна открывать любое количество внутренних массивов
+// */
+// var myName = { name: "Oleg" };
 
- example:
+function addNameToUser(newKey, newValue, someObject) {}
 
-  [[1,2],[3,[4]],5, 10] => [1,2,3,4,5,10]
-  [25,10,[10,[15]]] => [25,10,10,15]
-
- */
-
-function openBraces(arr) {}
+console.log(addNameToUser("age", 20, { name: "Sasha" })); // {age: 20, name: "Sasha"}
+console.log(addNameToUser("qwe", 2000, {})); // {qwe: 2000}
